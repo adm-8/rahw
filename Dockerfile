@@ -4,6 +4,7 @@ COPY ./requirements.txt /tmp/requirements.txt
 
 RUN pip install --user -r /tmp/requirements.txt
 RUN pip install --user apache-airflow-providers-postgres==5.3.1
+# RUN pip install --user apache-airflow-providers-jdbc
 
 RUN mkdir -p /usr/local/airflow/dags
 RUN mkdir -p /usr/local/airflow/custom_lib
